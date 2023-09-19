@@ -8,6 +8,7 @@
 \usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
 \usepackage{graphicx}
+\usepackage{float}
 
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
@@ -44,34 +45,25 @@ U ovom radu se istražuje šta je prethodilo ekspanziji računarstva u vremenu u
 \section{Uvod}
 \label{sec:uvod}
 
-Istorija računarstva doseže čak do antičke civilizacije i abakusa koji su se koristili kao pomoć pri izvođenju osnovnih operacija. Preko Paskalina koje sabiraju i oduzimaju cele brojeve, raznih mehaničkih digitrona nad dekadnim a i binarnim brojevnim sistemima, dolazimo do početka 19. veka kada nastaju i prve programabilne mašine. 
+Istorija računarstva seže daleko unazad, čak do antičkih civilizacija koje su koristile abakus za osnovne računske operacije. Tokom vremena, razvijali su se mehanički digitroni za rad sa dekadnim i binarnim brojevnim sistemima. Početkom 19. veka, konstruisane su prve programabilne mašine, uključujući čuvenu analitičku mašinu koja je omogućila programiranje putem bušenih kartica, uz pionirske napore Ade Bajron i Čarlsa Bebidža.
 
-1801. Zozef Mari Žakard konstruiše mašinu zasnovanu na bušenim karticama, Čarls Bebidž dizajnira prve programabilne računske mašine, nešto kasnije i diferencijske mašine i na kraju analitičke, mašine opšte namene na kojima bi moglo da se programira pomoću bušenih kartica. Ada Bajron i Bebidž pišu prve programe za analitičku mašinu, čime se pokreće važan točak u istoriji računarstva koji se kotrlja i danas. 
-Tek krajem 19. veka Herman Holerit uspeva da konstruiše uređaj za čitanje bušenih kartica koji je imao važnu primenu u tadašnjem popisu stanovništva i obradi velike količine podataka. 
+U 20. veku, računarstvo je doživelo značajne prekretnice. Pojavili su se prvi elektronski računari, uključujući ENIAC, prvi računar opšte namene. Ova era obeležena je i pojavom osnovnih koncepata, kao što su fon Nojmanova arhitektura i koncept elektronskog memorisanja.
 
-U 20. veku se dešavaju velika dostignuća, prvi računari kakve poznajemo danas potiču jos iz 30-ih godina prošlog veka,  kao što su ABC, jedan od prvih elektronskih računara koji je imao neki vid memorije. Krajem Drugog svetskog rata konstruše se računar Kolosus namenjen dešifrovanju nemačkih poruka kao i najpoznatiji ENIAC - prvi elektronki računar opšte namene koji je bio moćniji od svih pređašnjih i na čijoj osnovi su osmišljeni ostali računari koji imaju današnju fon Nojmanovu arhitekturu (procesor i memoriju) . \cite{p1}
- 
-Osim računara, razni važni koncepti računarstva koje danas koristimo su teorijski utemeljeni u prošlom veku, a ekspanziju i potpunu praktičnu primenu doživljavaju tek od u poslednje 2 dekade, u modernoj tehnologiji kakvu poznajemo danas. 
+Uz računare, mnogi ključni koncepti računarstva su teoretski osmišljeni tokom prethodnog veka, ali su se praktično razvijali tek u poslednjih nekoliko decenija. Umrežavanje računara putem WAN mreža počelo je 60-ih godina, a internet i World Wide Web (WWW) su omogućili globalno povezivanje računara tokom devedesetih. Jezici višeg nivoa, kao što su FORTRAN, COBOL, Algol i LISP, datiraju iz pedesetih i šezdesetih godina 20. veka. Koncepti kao mašinsko učenje i neuronske mreže imaju dugu istoriju, ali su zahtevali vreme i tehnološki napredak kako bi postali praktično primenjivi.
 
-Prvo umrežavanje računara putem WAN mreže dogodilo se 60-ih godina prošlog veka, a pojavom interneta i veba (WWW) tokom 90-ih većina računara postaje međusobno povezana. 
-
-Prvi jezici višeg nivoa kao što su FORTRAN, Cobol, Algol, LISP nastali su 50-ih i 60-ih godina prošlog veka.
-
-Čak i moderni koncepti poput Mašinskog učenja i neuronskih mreža datiraju još iz vremena rada Alena Tjuringa, ali je, kao i za mnoge oblasti, bilo potrebno vreme, hardverski i softverki napredak koji će moći da isprati teoriju tehnologije. 
-
-U ovom radu predstavljena su najveća tehnološko-računarska dostignuća ovog stoleća, koje su teme (bile) aktuelne i šta nam donosi tehnološka budućnost.
+U ovom radu se analiziraju najznačajnija tehnološka dostignuća 21. veka i istražuje kako su aktuelne teme oblikovale našu tehnološku budućnost.
 
 \setlength{\parskip}{1em}
 
-
-
 \section{Napredak računarstva u 21. veku}
 \label{sec:rac_21. vek}
+Sa današnje tačke gledišta primećujemo nekoliko presudnih trenutaka koji su doprineli razvoju tehnologije kakvu danas koristimo. Ključni događaji bi bili popularizacija interneta i razvoj pametnih uređaja početkom 21. veka a kasnije i razvoj društvenih mreža, veštačke inteligencije, Cloud i blockchain tehnologija, Interneta pametnih uređaja. 
 \subsection{Internet}
-
-Sa današnje tačke gledišta možemo uočiti nekoliko ključnih trenutaka koji su doveli do ekspanzije tehnologije kakvu danas znamo. Kao glavni se može izvdojiti {\bf  popularizacija Interneta } koja se desila početkom 2000-ih godina. WWW i internet su se pojavili još početkom 1990-ih, ali tek početkom ovog veka WWW postaje mainstream, tj. široko rasprostranjen. U 2000. godini na internetu postoji oko 361 milion korisnika (oko 5\% svetske populacije ), a već 2005. taj broj je skočio na oko 1 milijardu 18 miliona. Danas je skoro 70\% čitave populacije na mreži. \cite{worldstats} Veliki broj korisnika interneta dovela je do velike količine dostupnih korisničkih podataka, pa su razvijani mnogi algoritmi, alati i koncepti za razne vrste obrade tih podataka, što je dovelo do napretka i razvoja najvažnijih polja modernog računarstva. Kao što znamo mnogi koncepti mašinskog učenja i veštačke inteligencije se zasnivaju na modelovanju velike količine podataka, predikciji na osnovu poznatih informacija i dr .
+WWW i internet su se pojavili još početkom 1990-ih, ali tek početkom 2000-ih godina WWW postaje mainstream, tj. široko rasprostranjen. U 2000. godini na internetu postoji oko 361 milion korisnika (oko 5\% svetske populacije), a već 2005. taj broj je skočio na oko 1 milijardu 18 miliona. Danas je skoro 70\% čitave populacije na mreži \cite{worldstats}. Veliki broj korisnika interneta dovelo je do velike količine dostupnih korisničkih podataka, pa su razvijani mnogi algoritmi, alati i koncepti za razne vrste obrade tih podataka, što je dovelo do napretka i razvoja najvažnijih polja modernog računarstva. Kao što znamo mnogi koncepti mašinskog učenja i veštačke inteligencije se zasnivaju na modelovanju velike količine podataka, predikciji na osnovu poznatih informacija i dr.
 Danas se veliki obim poslovanja izvršava u internet okruženju a domen korišćenja računara je veoma širok.
 \subsection{Vremenska linija}
+
+U nastavku je prikazana vremenska linija 21. veka sa važnim dostignućima u računarskoj nauci i tehnologiji generalno. 
 
 
 \begin{figure}[h!]
@@ -90,9 +82,7 @@ Danas se veliki obim poslovanja izvršava u internet okruženju a domen korišć
 \end{figure}
 
 
-U nastavku je prikazana vremeska linija 21. veka sa važnim dostignućima u računarskoj nauci i tehnologiji generalno. 
-
-Početkom 2000. se pojavljuje prvi mobilni telefon sa kamerom, USB disk, a kompanija Honda predstavlja prvog čovekolikog robota. Zatim pratimo razvoj operativnih sistema koje danas koristimo - MAC OS X i Windows XP, zatim razvoj dobro poznatih društvenih mreža 2003-2004. Ubrzo nakon formiranja Laboratorije za Kompjutersku nauku i veštačku inteligenciju na MIT Univerzitetu, autonomno vozilo kreirano na Stenford Univerzitetu pobedjuje veliku automobilsku trku. Autonomna vožnja je i danas ključan pojam i važna oblast veštačke inteligencije koja se rapidno razvija i na kojoj se intenzivno radi jos od početka veka. Još 2006. godine se uvodi pojam Cloud-a, iako tek u poslednjoj dekadi intenzivno pričamo o ovoj temi i prebacujemo se na ovu tehnologiju. 2007. je zanimljiva godina kada se pojavljuju Kindl i prvi Iphone, dok se paralelno bavimo prostorom, kako fizičkim tako i ovim na cloud-u, pa tako se pojavljuje prvi hard disk sa memorijom od 1 TB, ali je pokrenut i DropBox - online skladiste. 2009. je razvijen BitCoin a tek od 2018. godine je primena Blockchain tehnologije proširena i na druge industrije. Poslednje godine vezane su uglavnom za ekspanziju svih podgrana veštačke inteligencije - robotike i razvoja veštačkih organa, robota koji se koriste u razne svrhe, autopilota i trenutno najpopularnijeg veštačkog pomoćnika - chatGPT.
+Početkom dvehiljaditih se pojavljuje prvi mobilni telefon sa kamerom, USB disk, a kompanija Honda predstavlja prvog čovekolikog robota. Zatim pratimo razvoj operativnih sistema koje danas koristimo - MAC OS X i Windows XP, zatim razvoj dobro poznatih društvenih mreža 2003-2004. Ubrzo nakon formiranja Laboratorije za Kompjutersku nauku i veštačku inteligenciju na MIT Univerzitetu, autonomno vozilo kreirano na Stenford Univerzitetu pobedjuje veliku automobilsku trku. Autonomna vožnja je i danas ključan pojam i važna oblast veštačke inteligencije koja se rapidno razvija i na kojoj se intenzivno radi jos od početka veka. Još 2006. godine se uvodi pojam Cloud-a, iako tek u poslednjoj dekadi intenzivno pričamo o ovoj temi i prebacujemo se na ovu tehnologiju. 2007. je zanimljiva godina kada se pojavljuju Kindl i prvi Iphone, dok se paralelno bavimo prostorom, kako fizičkim tako i ovim na cloud-u, pa tako se pojavljuje prvi hard disk sa memorijom od 1 TB, ali je pokrenut i DropBox - online skladište. 2009. je razvijen BitCoin a tek od 2018. godine je primena Blockchain tehnologije proširena i na druge industrije. Poslednje godine vezane su uglavnom za ekspanziju svih podgrana veštačke inteligencije - robotike i razvoja veštačkih organa, robota koji se koriste u razne svrhe, autopilota i trenutno najpopularnijeg veštačkog pomoćnika - ChatGPT.
 
 \setlength{\parskip}{1em}
 
@@ -104,22 +94,22 @@ Početkom 2000. se pojavljuje prvi mobilni telefon sa kamerom, USB disk, a kompa
 % \label{world wide web}
 
 \subsection{Društvene mreže}
-{\bf Pojava društvenih mreža} kao glavnog medijuma komunikacije danas je dovela do velikih promena u poslovnom svetu, u marketingu, internet kupovini, oglašavanju, pa je shodno tome bilo potrebno razviti jezike, baze podataka i ostale koncepte i prilagotiti ih korišćenju na internetu. 
+{\bf Pojava društvenih mreža} kao glavnog medijuma komunikacije danas je dovela do velikih promena u poslovnom svetu, u marketingu, internet kupovini, oglašavanju, pa je shodno tome bilo potrebno razviti jezike, baze podataka i ostale koncepte i prilagoditi ih korišćenju na internetu. 
 
 \subsection{Mobilno računarstvo}
-Razvoj hardvera, kao na primer mobilnih telefona početkom 2000. je još jedan od ključnih perioda u savremenoj istoriji.
-{\bf Razvoj mobilnog računarstva} je jedan od najvećih dostignuća 21. veka. Razvoj pametnih telefona je bio revolucionaran način na koji ljudi komuniciraju sa tehnologijom i međusobno, na bilo kojoj udaljenosti.  Mobilni telefoni su omogućili ljudima da se brzo i jednostavno povežu na internet i da pristupaju informacijama i uslugama u realnom vremenu i u pokretu, a naravno i da se (jeftino ) povežu sa ljudima na udaljenim lokacijama. 
+Razvoj hardvera, kao na primer mobilnih telefona početkom dvehiljaditih je jedan od ključnih perioda u savremenoj istoriji.
+{\bf Razvoj mobilnog računarstva} je jedan od najvećih dostignuća 21. veka. Razvoj pametnih telefona je bio revolucionaran način na koji ljudi komuniciraju sa tehnologijom i međusobno, na bilo kojoj udaljenosti.  Mobilni telefoni su omogućili ljudima da se brzo i jednostavno povežu na internet i da pristupaju informacijama i uslugama u realnom vremenu i u pokretu, a naravno i da se relativno jeftino povežu sa ljudima na udaljenim lokacijama. 
 Razvoj mobilnog računarstva imao je dubok uticaj na mnoge industrije, uključujući maloprodaju, zabavu i društvene medije, zdravlje, turizam, kretanje. Mobilne aplikacije postale su glavni način za kompanije da dođu do potrošača, a ekonomija aplikacija je brzo rasla.
-Ovaj trenutak morao je da isprati i softverski napredak, pa se tako dešava i ekspanzija razvoja novih tehnologija za mobilne uređaje, kao što su programski jezici Kotlin i Swift, mobilno plaćanje, usluge zasnovane na trenutnoj lokaciji. 
+Ovaj trenutak morao je da isprati i softverski napredak, pa se tako dešava i ekspanzija razvoja novih tehnologija za mobilne uređaje, kao što su programski jezici Kotlin i Swift, mobilno plaćanje, usluge zasnovane na trenutnoj lokaciji poput navigacionih aplikacija, praćenja vozila i dostava, servisa za retragu restorana i prodavnica i drugo. 
 
 \subsection{Veštačka inteligencija}
 {\bf Razvoj veštačke inteligencije}
-Veštacka inteligencija doživljava svoju ekspanziju usled iznenadne dostupnosti masihvnih skupova korisničkih podataka, pa mašinsko učenje postaje \"vruća tema\" računarstva
-jer je shvaćeno da veb podaci mogu hraniti takve algoritme. Pa tako početkom dvehiljaditih razvoj veštačke inteligencije je dobio nov zamah kada su računari pobedili svetskog velemajsotra u šahu i jer je niz izrazito važnih problema, od kojih se za neke pretpostavljalo da će jos dugo ostati van domašaja, biva rešen. 
-Osim pomenutog, javio se i talas vrlo uspešnih sistema zasnovanih na \„dubokom učenju\“ – sistema koji su uspešno vršili prepoznavanje lica na fotografijama, prevođenje prirodnih jezika, navigaciju vozila i drugo. Veštačka inteligencija danas je skoro sveprisutna, a opšte je uverenje da će se ta sveprisutnost u budućnosti dalje proširivati i produbljivati. \cite{vi}
+Veštačka inteligencija doživljava svoju ekspanziju usled iznenadne dostupnosti masivnih skupova korisničkih podataka, pa mašinsko učenje postaje "vruća tema" računarstva
+jer je shvaćeno da veb podaci mogu hraniti takve algoritme. Početkom dvehiljaditih godina razvoj veštačke inteligencije doživljava ubrzan napredak kada je računar pobedio svetskog velemajsotra u šahu i dokazao teoreme koje čovek dugo nije uspevao da dokaže. 
+Osim pomenutog, javio se i talas vrlo uspešnih sistema zasnovanih na \„dubokom učenju\“ – sistema koji su uspešno vršili prepoznavanje lica na fotografijama, prevođenje prirodnih jezika, navigaciju vozila i drugo. Veštačka inteligencija danas je skoro sveprisutna, a opšte je uverenje da će se ta sveprisutnost u budućnosti dalje proširivati i produbljivati \cite{vi}.
 
 Od 2010. godine počinje era veštačke inteligencije koja i dalje traje. Moćni računari novih generacija omogućili su realizaciju i impementaciju neuronskih mreža koje su teorijski razvijene jos 1950-ih.
-Kroz duboko učenje ostvarili u se fantastični rezultati u mnogim poljima, kao što su računarski vid, automatsko prevođenje, igranje strateških igara, itd. Ovi rezultati zasnovani su na statistici i mašinskom ucenju.
+Kroz duboko učenje ostvarili su se fantastični rezultati u mnogim poljima, kao što su računarski vid, automatsko prevođenje, igranje strateških igara, itd. Ovi rezultati zasnovani su na statistici i mašinskom ucenju.
 
 \subsubsection{Veštačka inteligencija danas - filozofija, budućnost, etika}
 Cilj veštačke inteligencije je {\bf oponašanje prirodne inteligencije } - znanje i zaključivanje na osnovu datih informacija, potvrđenih činjenica ali i hipoteza  i nepotpunih informacija, usvajanje novih znanja i sposobnost komunikacija sa drugim inteligentnim bićima ili mašinama. Zato je bitan { \bf kvalitet baze znanja } - koji su izvori podataka, koliko su isti tačni i provereni, da li su podaci sa interneta, posebno sa društvenih mreža filtrirani i provereni.
@@ -138,9 +128,9 @@ Trenutno su sve velike kompanije uključene u neki vid razvoja virtualnog asiste
 \subsection{Kvantni računari}	
 {\bf Kvantni računar} je zamišljen kao mašina koja koristi koncepte kvante mehanike kako bi rešila neki problem brže nego što je to moguće na klasičnim računarima. Dok klasični računar reprezentuju bitovi, kvantni
 reprezentuju kjubiti (qbit). {\bf Kjubit} osim nule i jedinice ima i jedno dodatno stanje - superpoziciju - koja omogućava paralelizaciju
-izračunavanja i pretrage. \cite{kvantni}
+izračunavanja i pretrage \cite{kvantni}.
 
-Moć ovih računara biće u tome što će teorijski biti u stanju da neverovatnim brzinama pretražuje ogromne količine podataka, da čuva ogromnu količinu podataa, da uči iz prethodnih zadataka i da dalje čuva i rešava probleme. Smatra se da će zbog ovih mogućnosti u budućnosti biti od velike pomoći u pronalaženju novih lekova, u borbi protiv klimatskih promena, poboljšavanju robotike i celokupnom olakšavanju svakodnevnog života.
+Očekuje se da bi moć ovih računara bila u njihovoj sposobnosti da izvršavaju brzu pretragu i obrađuju i čuvaju ogromnu količinu podataka, učeći iz prethodnih zadataka i efikasno rešavajući različite probleme. Smatra se da će zbog ovih mogućnosti u budućnosti biti od velike pomoći u pronalaženju novih lekova, u borbi protiv klimatskih promena, poboljšavanju robotike i celokupnom olakšavanju svakodnevnog života.
 
 Tehnologija će morati da evoluira u kvantno otporan sistem u narednoj deceniji. Ovo prvenstveno važi zato što bi kvantni računari potencijalno mogli postati toliko moćni da napadnu kriptovalute i razbiju blockchain. Generalno javio bi se {\bf problem dekriptografije} jer bi za probijanje bilo koje
 kriptovane šifre super računaru trebale bi godine rada
@@ -178,7 +168,7 @@ Današnji programer ima širok spektar tehnologija i oblasti kojima može da se 
 		\end{itemize}
 Sve podgrane veštačke inteligencije su definitivno te koje se najviše razvijaju i usavršavaju iz dana u dan i čija primena je najšira ali važno je i spomenuti koliko je razvoj Cloud tehnologija uticao na razvoj biznisa, deljenje podataka, skalabilnost generalno, na povećanje bezbednosti sistema i svih segmenata biznisa. Cloud infrastruktura je smanjila troškove i povećala fleksibilnost pri implementaciji.
 
-Tema koja je vrlo aktuelna na svetskim IT konferencijama poslednjih godina je svakako i {\bf Internet of Things} - Internet pametnih uređaja. IOT je skup fizičkih uređaja koji su hradverski opremljeni tako da mogu biti povezani na internet, u svrhu deljanja i prikupljanja podataka. Ovime im e daje određena digitalna inteligencija, jer bez angažovanja čoveka koriste podatke i regulišu svoj rad. Ti uređaji mogu biti jednostavni poput igračaka za decu, kućnih aparata, satova ali i recimo mlazni motori, dronovi uz čiju pomoć može i da se kontroliše životna sredina, bezbednosni nadzor, pamtno grjanje, osvetljenje i drugo, što je dovelo i do pojave pametnih kuća i gradova. Primena IOT-a je jako široka i može biti od velike koristi u poljoprivredi, medicini, privredi, saobraćaju. IOT će verovatno i u narednoj dekadi biti tema o kojoj se priča baš zbog velikih prednosti na razne socio-ekonomske grane. \cite{iot}
+Tema koja je vrlo aktuelna na svetskim IT konferencijama poslednjih godina je svakako i {\bf Internet of Things} - Internet pametnih uređaja. IOT je skup fizičkih uređaja koji su hradverski opremljeni tako da mogu biti povezani na internet, u svrhu deljenja i prikupljanja podataka. Ovime im se daje određena digitalna inteligencija, jer bez angažovanja čoveka koriste podatke i regulišu svoj rad. Ti uređaji mogu biti jednostavni poput igračaka za decu, kućnih aparata, satova ali i recimo mlazni motori, dronovi uz čiju pomoć može i da se kontroliše životna sredina, bezbednosni nadzor, pametno grjanje, osvetljenje i drugo, što je dovelo i do pojave pametnih kuća i gradova. Primena IOT-a je jako široka i može biti od velike koristi u poljoprivredi, medicini, privredi, saobraćaju. IOT će verovatno i u narednoj dekadi biti tema o kojoj se priča baš zbog velikih prednosti na razne socio-ekonomske grane \cite{iot}.
 
 Tržište {\bf virutelne relanosti} je još jedna oblast u usponu zbog velike praktične primene u mnogim različitim oblastima. Zabava, turizam i virutelna putovanja, arhitektura u vidu vizualizacija projekata, virtuelna naselja, medicina, edukacija su samo od nekih najvažnijih oblasti u kojima VR ima primenu. Još sada se VR koristi kako bi se modeliralo ljudsko telo ili specifičan organ radi bolje vizualizacije i planiranja operacija. VR se koristi za učenje jezika, putovanja i drugo. 
 
@@ -188,13 +178,13 @@ Tržište {\bf virutelne relanosti} je još jedna oblast u usponu zbog velike pr
 
 Neminovno je da živimo u eri svojevrsne informatičke revolucije, koliko god bili spremni da prihvatimo novine koje nam se plasiraju iz dana u dan. Pre samo 10ak godina nije bilo moguće zamisliti da ćemo danas plaćati putem telefona, da će Google prevodilac biti toliko napredan da se možemo potpuno sporazumeti sa osobama čiji jezik ne poznajemo, da ćemo koristiti alate koji rade umesto nas, da ćemo plaćati virtuelnim valutama, da će kamera na našem telefonu moći da prepoznaje lica, predele, dokumenta, da čita pisani tekst... 
 
-Svaki pomalo nekontrolisani napredak ima svoje prednosti i mane, pa tako uz omasovljenost interneta i uz brz i lak pristup informacijama, sigurno imamo obaveštenije društvo, ali tačnost informacija je danas mnogo teže proveriti u nepreglednom moru istih. Danas uspevamo da rešimo kompleksne zadatke koje su decenijama bili zahtevni za tadašnju tehnologiju. Razvojem jedne nauke koja je postala implementirana u sve druge sigurno se doprinosi globalnom i generalnom razvoju opšteg znanja. Knjige i naučni članci su nam danas dostupni \"na klik\". 
+Svaki pomalo nekontrolisani napredak ima svoje prednosti i mane, pa tako uz omasovljenost interneta i uz brz i lak pristup informacijama, sigurno imamo obaveštenije društvo, ali tačnost informacija je danas mnogo teže proveriti u nepreglednom moru istih. Danas uspevamo da rešimo kompleksne zadatke koje su decenijama bili zahtevni za tadašnju tehnologiju. Razvojem jedne nauke koja je postala implementirana u sve druge sigurno se doprinosi globalnom i generalnom razvoju opšteg znanja. Knjige i naučni članci su nam danas dostupni "na klik" . 
 Sticanje znanja iz različitih obasti kroz online edukacije je jedan od velikih benefita za koji možemo biti zahvalni napretku tehnologije.  
-Do početka 2000. bilo je teško povezati se sa ljudima i mašinama na udaljenim krajevima sveta, dok je danas globalno umrežavanje naša svakodnevica što nas čini stanovnicima celog sveta. Ništa više nam nije tako nedostupno i nepoznato, koliko god bilo udaljeno.
+Do početka dvehiljaditih bilo je teško povezati se sa ljudima i mašinama na udaljenim krajevima sveta, dok je danas globalno umrežavanje naša svakodnevica što nas čini stanovnicima celog sveta. Ništa više nam nije tako nedostupno i nepoznato, koliko god bilo udaljeno.
 
 
-Nažalost, ovaj rapidni napredak nas je uhvatio i nespremne za neke nove probleme koji su se pojavili. Neželjenog sadržaja na internetu je mnogo i teško ga je ograničiti. Součavamo se sa brojnim posledicama prekomernog korišćenja pametnih uređaja koji utiču na psihofizički razvoj, akademske i druge performanse, lečimo se od socijalne distanciranosti i tehnološke anksioznosti.  \cite{techanx} Svetska zdravstvena organizacija je uključila poremećaj igranja video igara u poslednju reviziju Međunarodne klasifikacije bolesti (ICD-11) kao ponašanje sa adiktivnim svojstvima. \cite{gamingdisorder} 
-Učestvovanjem na online nebu potencijalno postajemo žrtve prevara, krađa i može nam biti ugrožena bezbednost. Tehnologija je i veliki zagađivač planete i negativno utiče na iscrpljivanje prirodnih resursa, zagađenje vazduha i nagomilavanje otpada, ali se tehnologija može i iskoristiti u borbi protiv zagađenja planete i ovo je takođe jedna od grana koja će se rapidno razvijati u narednim godinama. \cite{pollution}
+Nažalost, ovaj rapidni napredak nas je uhvatio i nespremne za neke nove probleme koji su se pojavili. Neželjenog sadržaja na internetu je mnogo i teško ga je ograničiti. Součavamo se sa brojnim posledicama prekomernog korišćenja pametnih uređaja koji utiču na psihofizički razvoj, akademske i druge performanse, lečimo se od socijalne distanciranosti i tehnološke anksioznosti \cite{techanx}. Svetska zdravstvena organizacija je uključila poremećaj igranja video igara u poslednju reviziju Međunarodne klasifikacije bolesti (ICD-11) kao ponašanje sa adiktivnim svojstvima \cite{gamingdisorder}. 
+Učestvovanjem na online nebu potencijalno postajemo žrtve prevara, krađa i može nam biti ugrožena bezbednost. Tehnologija je i veliki zagađivač planete i negativno utiče na iscrpljivanje prirodnih resursa, zagađenje vazduha i nagomilavanje otpada, ali se tehnologija može i iskoristiti u borbi protiv zagađenja planete i ovo je takođe jedna od grana koja će se rapidno razvijati u narednim godinama \cite{pollution}.
 
 
 
@@ -204,8 +194,6 @@ Poslednji pasus generisan je od strane chatbot-a ChatGPT i to je njegovo viđenj
 
 % \setlength{\parskip}{27em}
 
-
-\newpage
 \addcontentsline{toc}{section}{}
 \appendix  
 %\bibliography{cites} 
@@ -250,10 +238,35 @@ Review of Literature }
     \bibitem{iot}
         \href{https://samoobrazovanje.rs/sta-je-internet-of-things-internet-inteligentnih-uredjaja/}{IOT osnove}
 \end{thebibliography}
+\newpage
 
 \appendix
 \section{ChatGPT}
 
-Više o chatGPT-u, kako bi on napravio prezentaciju, na koja pitanja chatgpt nam ne bi mogao dati odgovr
+ChatGPT je veštačka inteligencija ili jezički model koji je treniran na ogromnom korpusu tekstualnih podataka kako bi naučio razumevanje prirodnog jezika i generisanje tekstualnih odgovora na osnovu zadatih ulaza. Može se koristiti za različite svrhe, uključujući odgovaranje na pitanja, pružanje informacija, pomoć u rešavanju problema, generisanje sadržaja, davanje saveta i još mnogo toga. ChatGPT može komunicirati na različitim jezicima i prilagoditi se različitim kontekstima. 
+
+Kako sam kaže, važno je napomenuti da ChatGPT koristi tekstualnu obradu i generaciju na osnovu prethodnih tekstualnih ulaza, te da nema stvarnu svest ili razumevanje. Osim toga, njegovi odgovori se generišu na osnovu obimnog trening skupa podataka, ali se ne oslanja na aktuelne informacije nakon datuma svog poslednjeg ažuriranja, koji je septembar 2021. godine.
+
+Chat GPT je alat koji ima široku primenu a jedna od glavnih prednosti bi bilo skraćivanje vremena pretrage i analize teme koju izučavamo, s obzirom da je model istreniran na velikoj količini podataka iz različitih izvora. Izučavajući temu seminarskog rada potrošila sam veći deo vremena na prikupljanje podataka i zaključivanje šta je to što se najčešće spominje, šta je najvažnija nit i na proveru informacija. Nakon nekoliko dana rada na prezentaciji na temu "Pregled razvoja računarstva u 21. veku", pitala sam ChatGPT da mi napravi prezentaciju na istu temu i ovo je bio njegov odgovor:
+
+\begin{figure}[H]
+% \begin{center}
+\includegraphics[scale=0.65]{Merged_document.png}
+% \end{center}
+\caption{ChatGPT}
+\label{fig:kvant}
+\end{figure}
+
+Može se uočiti velika sličnost između tema obrađenih u mom radu i onih koje je predložio ChatGPT. To mi je dalo potvrdu da je analiza urađena dobro i da su u radu pokrivene sve važne teme, ali je potrošeno mnogo sati na pronalaženje i isčitavanje svih relevantnih izvora. Zaključuje se da se ChatGPT može koristiti kao pomoć pri pisanju radova jer umnogome smanjuje vreme potrošeno na samu pripremu. Samoistraživanje je važno jer daje širu sliku izučavane teme a ne samo presek najvažnijih činjenica koje pruža ChatGPT. Za potpuno razumevanje oblasti koju izučavamo nije dovoljno da se oslanjamo na činjenice pružene od strane ChatGPT-a već je on pomoćno sredstvo koje nas može upoznati sa nekom temom, tako što će napraviti kostur osnovnih informacija i tema koje se dalje moraju produbiti. 
+
+Iako je moćan u automatizaciji zadataka koji nam oduzimaju mnogo vremena, korišćenje ChatGPT-a mora biti kontrolisano i dobijene informacije se moraju uzimati sa rezervom. Postavlja se i pitanje etike korišćenja alata, jer kao što smo videli može generisati tekst na zadatu temu, koji korisnik može dalje plasirati kao svoj. ChatGPT može nam dati uvid na razne teme ali ima svoja ograničenja i ne može dati odgovor na sva pitanja. Kako sam kaže, ažuriran je u septembru 2022. godine i ne može nam dati aktuelne informacije. Ovo sam proverila i ChatGPT ne daje informacije o aktuelnim temama iz 2023. godine. Ukoliko model nije istreniran na neku temu, neće nam dati tačne informacije ili neće imati odgovor. Navodi da nije sposoban za obradu osetljivih informacija kao što su lični, finansijski i zdravstveni podaci. Ne bi trebalo da daje nelegalne i etički neprihvatljive savete i širenje mržnje. Nema sposobnost predviđanja budućnosti i da rešava komplekse kreativne zadatke. Na primer, ChatGPT nije znao ko su pojedini dugogodišnji profesori Matematičkog fakulteta ali je imao informacije o većini javnih ličnosti naše zemlje.
+Deluje da model ne prihvata ispravke niti uči na osnovu informacija koje mi njemu pružamo. Na primer, model nema informacije o našoj poznatoj atletičarki Ivani Vuleta, ali zna ko je Ivana Španović. Iako se radi o istoj osobi koja je udajom promenila prezime, model ne prihvata moj komentar da je u pitanju ista osoba i na ponovni upit o tome ko je Ivana Vuleta dobijam odgovor da model nema informacija o osobi sa tim imenom. 
+
+Pokušala sam da pitam ChatGPT kako se oseća osoba sa određenim emocionalnim i fizičkim simptomima. Modelu je postavljeno pitanje kako se oseća osoba koja ne govori puno, ima zabrinut pogled, podočnjake i plače i dobijen je vrlo detaljan odgovor o tome da opisano ukazuje na neko emocionalno opterećenje, uz potencijalna stanja u kojima se osoba nalazi i načine na koje možemo da pomognemo osobi koja je u tom stanju. Model ispravno prepoznaje znake raznih stanja kao što su zaljubljenost, potištenost, sreća, tuga, ushićenost, ponos i drugo a ono što je zanimljivo je da uvek navede da on ne može da čita osećanja drugih ljudi i da ako želimo da budemo sigurni, moramo pitati i razgovarati sa osobom kako bismo bili sigurni kako se oseća. 
+
+Evo šta ChatGPT zaključuje sam o sebi:
+
+"ChatGPT predstavlja impresivan napredak u oblasti prirodne jezičke obrade i komunikacije između ljudi i računara. ChatGPT ima potencijal da poboljša korisničko iskustvo u različitim oblastima, uključujući online podršku, automatizovanu asistenciju i generisanje sadržaja. Međutim, važno je uzeti u obzir i ograničenja modela, kao što su povremeni nepravilni odgovori i potreba za pažljivim praćenjem kako bi se osigurala tačnost informacija. U budućnosti, dalje fine-tjuningovanje i razvoj modela kao što je ChatGPT će verovatno unaprediti sposobnosti konverzacijskih AI sistema i omogućiti njihovu širu primenu u svakodnevnom životu."
+
 
 \end{document}
